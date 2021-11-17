@@ -6,7 +6,7 @@ const createBook = async function (req, res) {
   let savedBook = await BookModel.create(book);
   res.send({ msg: savedBook });
 };
-
+//comment1
 const getBooksData = async function (req, res) {
   let allBooks = await BookModel.find();
   res.send({ msg: allBooks });
